@@ -103,7 +103,7 @@ echo $?
 [ -f ./scripts/script1.sh ] && echo "File Found" || echo "File not Found"
 ```
 
-_NOTES_
+_NOTES:_
 
 1. Use `:` instead of `/bin/bash` for simple scripting. It is more portable as it doesn’t require bash to be present
 2. We can use the output of one command as an input to another command by using backticks ``
