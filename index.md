@@ -38,20 +38,22 @@ echo $?
 test 9 -gt 5 && echo "True" || echo "False"
 ```
 
-* The test command returns an exit status which is used by shell to determine whether the condition was true or false. In the above cases, if `echo $?` returns the output as 0 means true/success and if the output as 1 then it's false/failure
+* '-gt' stands for greater than
 
 * Which can be further explained and executed seperately in cli as well 
 ```bash
-test 9 -gt 5
-echo $?             # this means ( && ) i.e., True
+test 9 -gt 5            # this command will satisfy this statement ( && ) i.e., "True"
+echo $?
 ```
 
 ```bash
-test 9 -gt 29
-echo $?             # this means ( || ) i.e., False
+test 9 -gt 29           # this command will satisfy this statement ( || ) i.e., "False"
+echo $?
 ```
 
-* However, we can interchange the 'True/False' positions as well which will also change the result check it out for yourself
+* The test command returns an exit status which is used by shell to determine whether the condition was true or false. In the above cases, if `echo $?` returns the output as '0' means true/success and if the output as '1' then it's false/failure
+
+* However, we can interchange the 'True/False' positions according to our requirements
 
 * Short hand version
 ```bash
@@ -100,8 +102,8 @@ echo $?
 
 _NOTES_
 
-1. Use `:` instead of `/bin/bash` for simple scripting. It is more portable as it doesn’t require bash to
-2. We can use the output of one command as an input to another command by using backticks
+1. Use `:` instead of `/bin/bash` for simple scripting. It is more portable as it doesn’t require bash to be present
+2. We can use the output of one command as an input to another command by using backticks ``
 3. We can use `-z` to check if string is empty, `-n` to check if string is non-empty
 4. `[[]]` is used for arithmetic comparison and also for testing conditions in scripts</s>
 5. We can also perform string comparison, file existence checks etc with test command
