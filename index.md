@@ -27,7 +27,7 @@ echo $?
 echo $?
 ```
 
-* This is known as Extended short hand, basically this command is used if there's any extra spaces between the commands
+* This is known as Extended short hand, basically this command is used if there's any extra spaces between the paths
 ```bash
 [[ -d $HOME ]]
 echo $?
