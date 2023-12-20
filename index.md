@@ -110,3 +110,9 @@ _NOTES_
 3. We can use `-z` to check if string is empty, `-n` to check if string is non-empty
 4. `[[]]` is used for arithmetic comparison and also for testing conditions in scripts</s>
 5. We can also perform string comparison, file existence checks etc with test command
+6. The exit status of any command (including test) is stored in `$?`. If the last executed command was successful then it's value
+
+
+### References ~
+
+_**[Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/exitcodes.html){:target="_blank"}**_
