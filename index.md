@@ -1,52 +1,52 @@
 ### Some useful linux commands to understand the shell scripts in better aspect
 
 * Limit the number of characters to be entered by the user
-```
+```bash
 read -n1 -p "Do you wish to continue (y/N) ?"
 ```
 
 * Shell provides an option to hide text when the user enters any sensitive information
-```
+```bash
 read -s -p "What's your passcode ?" passcode
 ```
 
 * To check the passcode later
-```
+```shell
 echo $passcode
 ```
 
 * Check if a particular directory exists or not using a full command
-```
+```bash
 test -d $HOME
 echo $?
 ```
 
-* Or we can use the same command as a short hand notation
-```
+* Or we can achieve the same using a short hand notation
+```bash
 [ -d $HOME ]
 echo $?
 ```
 
 * This is known as Extended short hand, basically this command is used if there's any extra spaces between the commands
-```
+```bash
 [[ -d $HOME ]]
 echo $?
 ```
 
 * Some more examples of `test` command
-```
+```bash
 test 9 -gt 5 && echo "True" || echo "False"
 ```
 
 * The test command returns an exit status which is used by shell to determine whether the condition was true or false. In the above cases, if `echo $?` returns the output as 0 means true/success and if the output as 1 then it's false/failure
 
 * Which can be further explained and executed seperately in cli as well 
-```
+```bash
 test 9 -gt 5
 echo $?             # this means ( && ) i.e., True
 ```
 
-```
+```bash
 test 9 -gt 29
 echo $?             # this means ( || ) i.e., False
 ```
@@ -54,47 +54,47 @@ echo $?             # this means ( || ) i.e., False
 * However, we can interchange the 'True/False' positions as well which will also change the result check it out for yourself
 
 * Short hand version
-```
+```bash
 [ 9 -gt 5 ] && echo "True" || echo "False"
 ```
 
-```
+```bash
 [ 9 -gt 29 ] && echo "True" || echo "False"
 ```
 
 * Same can be achieved for checking if a file exists or not
-```
+```bash
 test -f ./sample.txt
 echo $?
 ```
 
 * OR a short hand notation
-```
+```bash
 [ -f ./sample.txt ]
 echo $?
 ```
 
 * Extended short hand example
-```
+```bash
 [[ -f ./sample.txt ]]
 echo $?
 ```
 
 * Some more examples of `test` command
 * This will return 0 if the script is found, otherwise it returns 1
-```
+```bash
 test -f ./scripts/script1.sh 
 echo $?
 ```
 
 * Instead of using `echo $?` all the time manually, we can use ```&& echo "True" || echo "False"```
 
-```
+```bash
 [ -f ./scripts/script2.sh ] && echo "File exists" || echo "File doesnot exists"
 
 ```
 * OR
-```
+```bash
 [ -f ./scripts/script1.sh ] && echo "File Found" || echo "File not Found"
 ```
 
