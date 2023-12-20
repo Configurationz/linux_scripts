@@ -98,6 +98,7 @@ echo $?
 ```
 
 * OR
+
 ```bash
 [ -f ./scripts/script1.sh ] && echo "File Found" || echo "File not Found"
 ```
