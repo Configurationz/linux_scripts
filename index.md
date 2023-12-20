@@ -40,7 +40,8 @@ test 9 -gt 5 && echo "True" || echo "False"
 
 * '-gt' stands for greater than
 
-* Which can be further explained and executed seperately in cli as well 
+* Which can be further explained and executed seperately in cli as well
+
 ```bash
 test 9 -gt 5            # this command will satisfy this statement ( && ) i.e., "True"
 echo $?
@@ -56,6 +57,7 @@ echo $?
 * However, we can interchange the 'True/False' positions according to our requirements
 
 * Short hand version
+
 ```bash
 [ 9 -gt 5 ] && echo "True" || echo "False"
 ```
@@ -93,8 +95,8 @@ echo $?
 
 ```bash
 [ -f ./scripts/script2.sh ] && echo "File exists" || echo "File doesnot exists"
-
 ```
+
 * OR
 ```bash
 [ -f ./scripts/script1.sh ] && echo "File Found" || echo "File not Found"
