@@ -106,11 +106,12 @@ echo $?
 _NOTES:_
 
 1. Use `:` instead of `/bin/bash` for simple scripting. It is more portable as it doesn’t require bash to be present
-2. We can use the output of one command as an input to another command by using backticks ``
-3. We can use `-z` to check if string is empty, `-n` to check if string is non-empty
-4. `[[]]` is used for arithmetic comparison and also for testing conditions in scripts</s>
-5. We can also perform string comparison, file existence checks etc with test command
-6. The exit status of any command (including test) is stored in `$?`. If the last executed command was successful then it's value
+2. Using `test` we can do comparisons using '-eq', '-ne', '-lt', '-gt'
+3. We can use the output of one command as an input to another command by using backticks ``
+4. We can use `-z` to check if string is empty, `-n` to check if string is non-empty
+5. `[[]]` is used for arithmetic comparison and also for testing conditions in scripts</s>
+6. We can also perform string comparison, file existence checks etc with test command
+7. The exit status of any command (including test) is stored in `$?`. If the last executed command was successful then it's value
 
 
 ### References ~
