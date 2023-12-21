@@ -112,6 +112,7 @@ _NOTES:_
 5. `[[]]` is used for arithmetic comparison and also for testing conditions in scripts</s>
 6. We can also perform string comparison, file existence checks etc with test command
 7. The exit status of any command (including test) is stored in `$?`. If the last executed command was successful then it's value
+8. In command line usage, when we see arguments in '<>' they are called as required arguments and if the arguments are in '[]' they are known as optional arguments.
 
 
 ### References ~
