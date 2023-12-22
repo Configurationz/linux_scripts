@@ -118,3 +118,5 @@ _NOTES:_
 ### References ~
 
 _**[Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/exitcodes.html){:target="_blank"}**_
+
+_**[What does "2>&1" mean?](https://stackoverflow.com/questions/818255/what-does-21-mean){:target="_blank"}**_
